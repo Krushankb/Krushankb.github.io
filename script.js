@@ -1,6 +1,6 @@
-function toggleMenu() {
-    const menu = document.querySelector(".menu-links");
-    const icon = document.querySelector(".hamburger-icon");
-    menu.classList.toggle("open");
-    icon.classList.toggle("open");
+const header = document.getElementById('siteHeader');
+if (header) {
+  const onScroll = () => header.classList.toggle('scrolled', window.scrollY > 8);
+  document.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
 }

@@ -1,369 +1,437 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="google-site-verification" content="lMp8eOYe8BnBQ0OL7fpGJGfb6-wxSx6-1Bg2pDDENrE" />
-        <title>Krushank Bayyapu</title>
-        <link rel= "stylesheet" href = "style.css" />
-        <link rel= "stylesheet" href = "mediaqueries.css" />
-    </head>
-    <body>
-        <nav id = "desktop-nav">
-            <div class="logo"><b>Krushank Bayyapu</b></div>
-            <div>
-                <ul class = "nav-links">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#experience">Experiences</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
-        </nav>
-        <nav id="hamburger-nav">
-            <div class="logo">Krushank Bayyapu</div>
-            <div class="hamburger-menu">
-                <div class="hamburger-icon" onclick="toggleMenu()">
-                    <span></span> 
-                    <span></span>
-                    <span></span>
-                </div>
-                <div class="menu-links">
-                    <li><a href="#about" onclick="toggleMenu()">About</a></li>
-                    <li><a href="#experience" onclick="toggleMenu()">Experiences</a></li>
-                    <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-                    <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-                </div>
-            </div>
-        </nav>
-        <section id="profile">
-            <div class="section__pic-container">
-                <img src="./assets/profile-pic.jpg" alt="Krushank Bayyapu Profile Pic"/>
-            </div>
-            <div class="section__text">
-                <p class = "section__text__p1">
-                    Hello, I'm
-                </p>
-                <h1 class="title">Krushank Bayyapu</h1>
-                <p class="section__text__p2">CS Undergraduate Student at UIUC</p>
-                <div class = "btn-container">
-                    <button class="btn btn-color-2" onclick="window.open('./assets/resume.pdf')">Download Resume</button>
-                    <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button>
-                </div>
-                <div id ="socials-container">
-                    <img src="./assets/linkedin.png" alt = "My LinkedIn Profile" class="icon" onclick="location.href='https://www.linkedin.com/in/krushank-bayyapu-3ab0a51b3/'"/>
-                    <img src="./assets/github.png" alt = "My Github Profile" class="icon" onclick="location.href='https://github.com/Krushankb'"/>
-                </div>
-            </div>
-        </section>
-        <section id="about">
-            <p class="section__text__p1">Get To Know More</p>
-            <h1 class="title">About Me</h1>
-            <div class="section-container">
-              <div class="section__pic-container">
-                <img
-                  src="./assets/about-me.png"
-                  alt="Profile picture"
-                  class="about-pic"
-                />
-              </div>
-              <div class="about-details-container">
-                <div class="about-containers">
-                  <div class="details-container">
-                    <img
-                      src="./assets/experience.png"
-                      alt="Experience icon"
-                      class="icon"
-                    />
-                    <h3>Experience</h3>
-                    <p>3+ years <br />AI/ML Engineer and Developer</p>
-                  </div>
-                  <div class="details-container">
-                    <img
-                      src="./assets/education.png"
-                      alt="Education icon"
-                      class="icon"
-                    />
-                    <h3>Education</h3>
-                    <p>B.S. Bachelors Degree<br />Computer Science</p>
-                  </div>
-                </div>
-                <div class="text-container">
-                  <p>
-                    As a technology enthusiast deeply passionate about engineering and computer science, I am currently immersed in pursuing a B.S. in Computer Science Engineering at UIUC. With an outgoing personality and an insatiable drive to learn, I actively seek opportunities to share my knowledge and explore new technologies, all while enjoying the serenity of nature. My objective is clear: to leverage my skills and interests in ML and Generative AI to create positive impacts within the communities around me.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <img
-              src="./assets/arrow.png"
-              alt="Arrow icon"
-              class="icon arrow"
-              onclick="location.href='./#experience'"
-            />
-          </section>
-          <section id="experience">
-            <p class="section__text__p1">Explore My</p>
-            <h1 class="title">Experience</h1>
-            <div class="experience-details-container">
-              <div class="about-containers">
-                <div class="details-container">
-                  <h2 class="experience-sub-title">Artificial Intelligence Techniques</h2>
-                  <div class="article-container">
-                    <article>
-                      <img
-                        src="./assets/checkmark.png"
-                        alt="Experience icon"
-                        class="icon"
-                      />
-                      <div>
-                        <h3>Python</h3>
-                        <p>Experienced</p>
-                      </div>
-                    </article>
-                    <article>
-                      <img
-                        src="./assets/checkmark.png"
-                        alt="Experience icon"
-                        class="icon"
-                      />
-                      <div>
-                        <h3>LLM Tech (Langchain)</h3>
-                        <p>Experienced</p>
-                      </div>
-                    </article>
-                    <article>
-                      <img
-                        src="./assets/checkmark.png"
-                        alt="Experience icon"
-                        class="icon"
-                      />
-                      <div>
-                        <h3>Pytorch</h3>
-                        <p>Experienced</p>
-                      </div>
-                    </article>
-                    <article>
-                      <img
-                        src="./assets/checkmark.png"
-                        alt="Experience icon"
-                        class="icon"
-                      />
-                      <div>
-                        <h3>TensorFlow</h3>
-                        <p>Intermediate</p>
-                      </div>
-                    </article>
-                    <article>
-                      <img
-                        src="./assets/checkmark.png"
-                        alt="Experience icon"
-                        class="icon"
-                      />
-                      <div>
-                        <h3>R</h3>
-                        <p>Experienced</p>
-                      </div>
-                    </article>
-                    <article>
-                      <img
-                        src="./assets/checkmark.png"
-                        alt="Experience icon"
-                        class="icon"
-                      />
-                      <div>
-                        <h3>OpenCV + Numpy</h3>
-                        <p>Experienced</p>
-                      </div>
-                    </article>
-                  </div>
-                </div>
-                <div class="details-container">
-                  <h2 class="experience-sub-title">Information Retrival Development</h2>
-                  <div class="article-container">
-                    <article>
-                      <img
-                        src="./assets/checkmark.png"
-                        alt="Experience icon"
-                        class="icon"
-                      />
-                      <div>
-                        <h3>PostgreSQL</h3>
-                        <p>Experienced</p>
-                      </div>
-                    </article>
-                    <article>
-                      <img
-                        src="./assets/checkmark.png"
-                        alt="Experience icon"
-                        class="icon"
-                      />
-                      <div>
-                        <h3>MongoDB</h3>
-                        <p>Intermediate</p>
-                      </div>
-                    </article>
-                    <article>
-                      <img
-                        src="./assets/checkmark.png"
-                        alt="Experience icon"
-                        class="icon"
-                      />
-                      <div>
-                        <h3>MySQL</h3>
-                        <p>Experienced</p>
-                      </div>
-                    </article>
-                    <article>
-                      <img
-                        src="./assets/checkmark.png"
-                        alt="Experience icon"
-                        class="icon"
-                      />
-                      <div>
-                        <h3>Git</h3>
-                        <p>Experienced</p>
-                      </div>
-                    </article>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <img
-              src="./assets/arrow.png"
-              alt="Arrow icon"
-              class="icon arrow"
-              onclick="location.href='./#projects'"
-            />
-          </section>
-          <section id="projects">
-            <p class="section__text__p1">Browse My Recent</p>
-            <h1 class="title">Projects</h1>
-            <div class="experience-details-container">
-              <div class="about-containers">
-                <div class="details-container color-container">
-                  <div class="article-container">
-                    <img
-                      src="./assets/project-1.png"
-                      alt="Project 1"
-                      class="project-img"
-                    />
-                  </div>
-                  <h2 class="experience-sub-title project-title">LLM Next Generation Search</h2>
-                  <h2 class="temp">FORWARD Data Lab Research Developer</h2>
-                  <div class="btn-container">
-                    <button
-                      class="btn btn-color-2 project-btn"
-                      onclick="location.href='https://github.com/Krushankb/FORWARD-Data-Lab-LLM-Research-Project'"
-                    >
-                      Github
-                    </button>
-                    <button
-                      class="btn btn-color-2 project-btn"
-                      onclick="location.href='https://drive.google.com/file/d/13-ju8MgIVA2rVBsGspb64wU_IES88eRq/view?usp=sharing'"
-                    >
-                      Live Demo
-                    </button>
-                  </div>
-                </div>
-                <div class="details-container color-container">
-                  <div class="article-container">
-                    <img
-                      src="./assets/project-2.jpg"
-                      alt="Project 2"
-                      class="project-img-2"
-                    />
-                  </div>
-                  <br>
-                  <br>
-                  <h2 class="experience-sub-title project-title">P.L.A.S.M.A</h2>
-                  <br>
-                  <h2 class="temp">Private SQL LLM Agent Side Project</h2>
-                  <br>
-                  <div class="btn-container">
-                    <button
-                      class="btn btn-color-2 project-btn"
-                      onclick="location.href='https://www.linkedin.com/feed/update/urn:li:activity:7174639300406378496/'"
-                    >
-                      LinkedIn Post
-                    </button>
-                    <button
-                      class="btn btn-color-2 project-btn"
-                      onclick="location.href='https://drive.google.com/file/d/1_1OzG7OL21-JBbnM-8kJADo4Xakz2eo_/view?usp=sharing'"
-                    >
-                      Live Demo
-                    </button>
-                  </div>
-                </div>
-                <div class="details-container color-container">
-                  <div class="article-container">
-                    <img
-                      src="./assets/project-3.png"
-                      alt="Project 3"
-                      class="project-img-3"
-                    />
-                  </div>
-                  <br>
-                  <h2 class="experience-sub-title project-title">Crime Mapping UIUC API</h2>
-                  <h2 class="temp">Project Developer + Continuing Side Project</h2>
-                  <div class="btn-container">
-                    <button
-                      class="btn btn-color-2 project-btn"
-                      onclick="location.href='https://github.com/Krushankb/UIUC-Crime-Mapping-API'"
-                    >
-                      Github
-                    </button>
-                    <button
-                      class="btn btn-color-2 project-btn"
-                      onclick="location.href='https://github.com/Krushankb/UIUC-Crime-Mapping-API'"
-                    >
-                      Live Demo
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <img
-              src="./assets/arrow.png"
-              alt="Arrow icon"
-              class="icon arrow"
-              onclick="location.href='./#contact'"
-            />
-          </section>
-          <section id="contact">
-            <p class="section__text__p1">Get in Touch</p>
-            <h1 class="title">Contact Me</h1>
-            <div class="contact-info-upper-container">
-              <div class="contact-info-container">
-                <img
-                  src="./assets/email.png"
-                  alt="Email icon"
-                  class="icon contact-icon email-icon"
-                />
-                <p><a href="mailto:examplemail@gmail.com">krushankb@gmail.com</a></p>
-              </div>
-              <div class="contact-info-container">
-                <img
-                  src="./assets/linkedin.png"
-                  alt="LinkedIn icon"
-                  class="icon contact-icon"
-                />
-                <p><a href="https://www.linkedin.com/in/krushank-bayyapu-3ab0a51b3/">LinkedIn</a></p>
-              </div>
-            </div>
-          </section>
-          <footer>
-            <nav>
-              <div class="nav-links-container">
-                <ul class="nav-links">
-                  <li><a href="#about">About</a></li>
-                  <li><a href="#experience">Experience</a></li>
-                  <li><a href="#projects">Projects</a></li>
-                  <li><a href="#contact">Contact</a></li>
-                </ul>
-              </div>
-            </nav>
-          </footer>
-        <script src="script.js"></script>
-    </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="google-site-verification" content="lMp8eOYe8BnBQ0OL7fpGJGfb6-wxSx6-1Bg2pDDENrE" />
+  <title>Krushank Bayyapu — Agentic AI Engineer</title>
+  <meta name="description" content="Krushank Bayyapu — Agentic AI Engineer building production AI systems: multi-agent platforms, RAG at scale, LLM infrastructure. Open to Agentic AI Engineer, Forward Deployed Engineer, and Solutions Engineer roles." />
+  <meta name="theme-color" content="#0F0F10" media="(prefers-color-scheme: dark)" />
+  <meta name="theme-color" content="#F4F1EA" media="(prefers-color-scheme: light)" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600&family=Inter+Tight:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="site-header" id="siteHeader">
+    <nav aria-label="Primary">
+      <a href="#top" class="wordmark">Krushank Bayyapu</a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <a class="nav-resume" href="./assets/resume.pdf" target="_blank" rel="noopener">Résumé <span aria-hidden="true">↗</span></a>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <!-- HERO -->
+    <section id="top" class="hero" aria-labelledby="hero-title">
+      <p class="eyebrow mono">Portfolio — 2026</p>
+
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <h1 id="hero-title" class="display">
+            Agentic AI
+            <span class="display-em">Engineer.</span>
+          </h1>
+          <p class="lede">
+            I build production agentic AI systems — multi-agent platforms, retrieval at scale, and the LLM infrastructure behind them. Open to Agentic AI Engineer, Forward Deployed, and Solutions Engineer roles.
+          </p>
+          <div class="cta-row">
+            <a class="btn btn-primary" href="#projects">
+              See projects <span aria-hidden="true">→</span>
+            </a>
+            <a class="btn btn-ghost" href="./assets/resume.pdf" target="_blank" rel="noopener">
+              Download résumé
+            </a>
+          </div>
+        </div>
+
+        <aside class="hero-side">
+          <figure class="portrait">
+            <img src="./assets/portrait.jpg" alt="Portrait of Krushank Bayyapu" width="800" height="1000" />
+          </figure>
+          <div class="status">
+            <p class="status-line">
+              <span class="dot" aria-hidden="true"></span>
+              Open — Agentic AI · FDE · Solutions Engineer
+            </p>
+            <p class="status-meta mono">
+              Currently — Agentic AI @ United Airlines · Chicago
+            </p>
+          </div>
+        </aside>
+      </div>
+
+      <a href="#about" class="hero-foot" aria-label="Jump to About">
+        <span class="mono">01 &nbsp;·&nbsp; About</span>
+        <span class="hero-foot-rule" aria-hidden="true"></span>
+        <span class="mono">Scroll <span aria-hidden="true">↓</span></span>
+      </a>
+    </section>
+
+
+    <!-- CAREER AT A GLANCE -->
+    <section class="career-strip" aria-label="Career at a glance">
+      <div class="career-strip-inner">
+        <div class="career-stat">
+          <p class="career-num">3+ yrs</p>
+          <p class="mono career-label">Shipping production AI</p>
+        </div>
+        <div class="career-stat">
+          <p class="career-num">150+ users</p>
+          <p class="mono career-label">On the agentic platform I own</p>
+        </div>
+        <div class="career-stat">
+          <p class="career-num">M.S. · UIUC</p>
+          <p class="mono career-label">Highest Honors · 2025</p>
+        </div>
+        <div class="career-stat">
+          <p class="career-num">Built at</p>
+          <p class="mono career-label">United · TrustLogix · FORWARD Lab</p>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ABOUT -->
+    <section id="about" class="section" aria-labelledby="about-title">
+      <header class="section-head">
+        <p class="mono section-num">02 — About</p>
+        <h2 id="about-title" class="section-title">Engineer at the edge<br>of models and users.</h2>
+      </header>
+
+      <div class="about-grid">
+        <div class="about-body">
+          <p class="about-lead">
+            Three years turning frontier AI into systems people actually use — from an enterprise LLM platform SDK that ten teams ship on, to a production agentic AI stack serving 150+ users at United Airlines.
+          </p>
+          <p>
+            M.S. in Computer Science from the University of Illinois Urbana-Champaign (Highest Honors, 2025) and a B.S. in CS from UIUC (Dean's List, James Scholar Honors, 2024).
+          </p>
+          <p>
+            Today I'm on United's Early Career Digital Leadership rotation as an Agentic AI Systems Engineer. Before that: LLM engineer on United's enterprise AI platform, LLM test automation at TrustLogix.AI, retrieval + reasoning research at the FORWARD Data Lab, and earlier internships across fraud detection, ML, and data engineering.
+          </p>
+          <p>
+            I want to keep building agentic AI systems that put frontier models into real workflows — iterating against outcomes, not benchmarks. Open to <strong>Agentic AI Engineer</strong> roles at frontier labs, <strong>Forward Deployed Engineer</strong> roles at systems companies, and <strong>Solutions Engineer</strong> roles at AI platform / infra companies. Multi-agent orchestration, RAG at scale, evaluation infrastructure — and the craft of making these systems land inside a real organization.
+          </p>
+        </div>
+
+        <aside class="about-card" aria-label="Quick facts">
+          <ul class="facts">
+            <li><span class="mono">Based</span><span>Chicago, IL</span></li>
+            <li><span class="mono">Education</span><span>M.S. CS · UIUC · 2025</span></li>
+            <li><span class="mono">Experience</span><span>3+ yrs shipping AI</span></li>
+            <li><span class="mono">Focus</span><span>Agentic AI · RAG · LLM Infra</span></li>
+            <li><span class="mono">Open to</span><span>Agentic AI · FDE · Solutions Eng</span></li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+
+    <!-- SKILLS -->
+    <section id="skills" class="section" aria-labelledby="skills-title">
+      <header class="section-head">
+        <p class="mono section-num">03 — Stack</p>
+        <h2 id="skills-title" class="section-title">The tools I reach for.</h2>
+      </header>
+
+      <div class="stack">
+        <div class="stack-row">
+          <p class="mono stack-label">Languages</p>
+          <p class="stack-items">Python · Java · C · C++ · R · Bash · MATLAB · Git</p>
+        </div>
+        <div class="stack-row">
+          <p class="mono stack-label">AI &amp; ML</p>
+          <p class="stack-items">Agentic AI · Large Language Models · Generative AI · Retrieval-Augmented Generation · LangChain · LangGraph · Model Context Protocol · Natural Language Processing · Machine Learning</p>
+        </div>
+        <div class="stack-row">
+          <p class="mono stack-label">Cloud &amp; Data</p>
+          <p class="stack-items">AWS · Azure Data Factory · Snowflake · Databricks · Docker · MySQL · MongoDB</p>
+        </div>
+        <div class="stack-row">
+          <p class="mono stack-label">Tools</p>
+          <p class="stack-items">Playwright · Kubernetes · Splunk SOAR · PEGA · Webhook APIs · Neo4j · Streamlit · Ollama</p>
+        </div>
+        <div class="stack-row">
+          <p class="mono stack-label">Certifications</p>
+          <p class="stack-items">AWS AI Practitioner · AWS Cloud Practitioner · Anthropic MCP (Adv.) · Databricks GenAI · DeepLearning.AI GANs</p>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section" aria-labelledby="projects-title">
+      <header class="section-head">
+        <p class="mono section-num">04 — Featured Projects</p>
+        <h2 id="projects-title" class="section-title">Four systems, shipped.</h2>
+      </header>
+
+      <div class="project-grid">
+
+        <article class="project project-featured">
+          <div class="project-head">
+            <p class="mono project-meta">2026 · United Airlines · Production</p>
+            <h3 class="project-title">Agentic AI Platform</h3>
+            <p class="project-role mono">Owner · Agentic AI Systems Engineer</p>
+          </div>
+          <p class="project-pitch">
+            A production-grade agentic platform enabling autonomous workflows across United's internal operations — multi-agent orchestration with tool use and planning, layered on top of a RAG substrate and continuous eval pipelines.
+          </p>
+          <ul class="chips" aria-label="Stack">
+            <li>Multi-agent</li>
+            <li>Tool use</li>
+            <li>RAG</li>
+            <li>LLM eval</li>
+            <li>MCP</li>
+            <li>Production</li>
+          </ul>
+          <p class="project-outcome">
+            <strong>150+ users</strong> · <strong>73%</strong> less manual review · <strong>~300 hrs/month</strong> saved · <strong>2.5×</strong> task completion · <strong>+4 pts</strong> NPS.
+          </p>
+          <div class="project-links">
+            <a href="#case-study" class="link-arrow">Read the case study <span aria-hidden="true">→</span></a>
+          </div>
+        </article>
+
+        <article class="project">
+          <div class="project-head">
+            <p class="mono project-meta">2025 · Side project</p>
+            <h3 class="project-title">AI Code Dependency Visualizer</h3>
+            <p class="project-role mono">Solo build · Local-first</p>
+          </div>
+          <p class="project-pitch">
+            A local AI assistant that maps and reasons over a codebase's dependency graph. Python AST extracts structure, Llama 3 summarizes files, and Neo4j + Pyvis render an interactive graph you can chat with.
+          </p>
+          <ul class="chips" aria-label="Stack">
+            <li>Llama 3</li>
+            <li>LangChain</li>
+            <li>Neo4j</li>
+            <li>Python AST</li>
+            <li>Streamlit</li>
+            <li>Ollama</li>
+          </ul>
+          <p class="project-outcome">
+            Local-first design keeps proprietary code off external APIs — private RAG for engineers.
+          </p>
+          <div class="project-links">
+            <a href="https://github.com/Krushankb" class="link-arrow" target="_blank" rel="noopener">GitHub <span aria-hidden="true">↗</span></a>
+          </div>
+        </article>
+
+        <article class="project">
+          <div class="project-head">
+            <p class="mono project-meta">2025 · Side project</p>
+            <h3 class="project-title">LLM Instructional Training System</h3>
+            <p class="project-role mono">Solo build · Multi-agent</p>
+          </div>
+          <p class="project-pitch">
+            A production-style multi-agent training platform that simulates scenarios and gives adaptive, LLM-driven feedback. A persistent memory + retrieval layer keeps context continuous across sessions.
+          </p>
+          <ul class="chips" aria-label="Stack">
+            <li>Llama 3</li>
+            <li>Multi-agent</li>
+            <li>RAG</li>
+            <li>Persistent memory</li>
+            <li>Prompt engineering</li>
+          </ul>
+          <p class="project-outcome">
+            Grounded outputs in instructional materials — culturally aware, pedagogically aligned feedback.
+          </p>
+          <div class="project-links">
+            <a href="https://github.com/Krushankb" class="link-arrow" target="_blank" rel="noopener">GitHub <span aria-hidden="true">↗</span></a>
+          </div>
+        </article>
+
+        <article class="project">
+          <div class="project-head">
+            <p class="mono project-meta">2024 · Research + side project</p>
+            <h3 class="project-title">LLM Next-Generation Search</h3>
+            <p class="project-role mono">Research Developer · FORWARD Data Lab, UIUC</p>
+          </div>
+          <p class="project-pitch">
+            An LLM-based search system combining planning + retrieval over millions of documents. Prototype architectures informed downstream production RAG patterns at the lab.
+          </p>
+          <ul class="chips" aria-label="Stack">
+            <li>LLM planning</li>
+            <li>Retrieval</li>
+            <li>Structured data</li>
+            <li>Prototype → prod</li>
+          </ul>
+          <p class="project-outcome">
+            <strong>+57%</strong> answer relevance vs baseline retrieval.
+          </p>
+          <div class="project-links">
+            <a href="https://github.com/Krushankb/FORWARD-Data-Lab-LLM-Research-Project" class="link-arrow" target="_blank" rel="noopener">GitHub <span aria-hidden="true">↗</span></a>
+            <a href="https://drive.google.com/file/d/13-ju8MgIVA2rVBsGspb64wU_IES88eRq/view?usp=sharing" class="link-arrow" target="_blank" rel="noopener">Demo <span aria-hidden="true">↗</span></a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+
+    <!-- CASE STUDY -->
+    <section id="case-study" class="section section-case" aria-labelledby="case-title">
+      <header class="section-head">
+        <p class="mono section-num">05 — Case study</p>
+        <h2 id="case-title" class="section-title">Agentic AI Platform<br>at United Airlines.</h2>
+        <p class="section-lede">
+          What it took to move a multi-agent system from a lab demo to a production platform serving 150+ internal users across engineering and operations.
+        </p>
+      </header>
+
+      <div class="case-grid">
+        <div class="case-body">
+
+          <div class="case-tldr">
+            <p class="mono case-tldr-label">TL;DR</p>
+            <p class="case-tldr-body">A production multi-agent AI platform for internal ops at United — <strong>150+ users</strong>, <strong>73%</strong> less manual review (<strong>~300 hrs/month</strong> saved), <strong>2.5×</strong> task completion, <strong>+4 pts</strong> internal NPS.</p>
+          </div>
+
+          <div class="case-block">
+            <h3 class="case-head">The problem</h3>
+            <p>
+              Internal ops and engineering teams at United were losing days a month to repetitive investigative work — chasing information across siloed systems, hand-triaging reviews, and repeating the same reasoning steps across similar cases. Existing point tools solved narrow pieces of the workflow; nothing composed them end-to-end. Everyone knew where the bottleneck was; nobody had built the plumbing to remove it.
+            </p>
+          </div>
+
+          <div class="case-block">
+            <h3 class="case-head">The approach</h3>
+            <p>
+              I designed and owned a production-grade agentic platform layered on top of United's enterprise LLM SDK. Three subsystems, one product:
+            </p>
+            <ol class="case-list">
+              <li>
+                <strong>Multi-agent orchestration</strong> — planner + tool-using agents with structured hand-offs, so a single request could safely fan out to multiple specialists, gather evidence, and produce a decision.
+              </li>
+              <li>
+                <strong>RAG substrate</strong> — 100K+ documents indexed with retrieval + prompt orchestration tuned to the ops corpus, so agents reasoned over ground truth instead of hallucinating from priors.
+              </li>
+              <li>
+                <strong>Eval &amp; feedback loop</strong> — automated ground-truth generation and scoring, plus a monitoring pipeline that lets us catch regressions and iterate on prompts + tools without breaking production.
+              </li>
+            </ol>
+          </div>
+
+          <div class="case-block">
+            <h3 class="case-head">Tradeoffs I chose</h3>
+            <ul class="case-list">
+              <li>
+                <strong>Latency vs. reasoning depth.</strong> Multi-agent workflows are slower than a single-shot call. I parallelized tool execution and cached retrievals; users trade a few seconds of wait for a 2.5× lift in what actually gets completed.
+              </li>
+              <li>
+                <strong>Response speed vs. RAG accuracy.</strong> Bigger retrievals help recall but hurt latency and cost. I tuned retrieval + prompt orchestration per workflow rather than one-size-fits-all — issue resolution got 47% faster without sacrificing grounding.
+              </li>
+              <li>
+                <strong>Governance overhead vs. iteration velocity.</strong> Automated ground truth + scoring meant continuous eval didn't slow the team down — it caught quality regressions before users did.
+              </li>
+            </ul>
+          </div>
+
+          <div class="case-block">
+            <h3 class="case-head">Result</h3>
+            <p>
+              Adopted across engineering and operations teams; used by 150+ users at last measurement. Manual review time dropped 73% (~300+ hours/month saved), task completion rates rose 2.5×, and internal NPS improved by 4+ points on the workflows the platform touched. Integration into internal platforms drove adoption without top-down mandates — the tool spread because it worked.
+            </p>
+          </div>
+
+          <div class="case-block">
+            <h3 class="case-head">What I'd generalize</h3>
+            <p>
+              The platform pattern held: <em>evaluation infrastructure is not a nice-to-have — it's the substrate that lets you keep shipping</em>. Multi-agent designs earn their complexity only when you can ground them and measure them; without both, they collapse into unreliable demos. That's the lesson I'd carry into any Forward Deployed context.
+            </p>
+          </div>
+        </div>
+
+        <aside class="case-metrics" aria-label="Impact">
+          <div class="metric">
+            <p class="metric-num">150+</p>
+            <p class="metric-label mono">internal users</p>
+          </div>
+          <div class="metric">
+            <p class="metric-num">73%</p>
+            <p class="metric-label mono">less manual review</p>
+          </div>
+          <div class="metric">
+            <p class="metric-num">~300 hrs</p>
+            <p class="metric-label mono">saved / month</p>
+          </div>
+          <div class="metric">
+            <p class="metric-num">2.5×</p>
+            <p class="metric-label mono">task completion</p>
+          </div>
+          <div class="metric">
+            <p class="metric-num">47%</p>
+            <p class="metric-label mono">faster resolution</p>
+          </div>
+          <div class="metric">
+            <p class="metric-num">+4 pts</p>
+            <p class="metric-label mono">internal NPS</p>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+
+    <!-- CONTACT -->
+    <section id="contact" class="section section-contact" aria-labelledby="contact-title">
+      <header class="section-head">
+        <p class="mono section-num">06 — Contact</p>
+        <h2 id="contact-title" class="section-title">Let's talk.</h2>
+        <p class="section-lede">
+          Fastest way to reach me is email. If you're hiring for an <strong>Agentic AI Engineer</strong>, <strong>Forward Deployed</strong>, or <strong>Solutions Engineer</strong> role — or building the frontier of agentic AI in production — I'd love to hear about it.
+        </p>
+      </header>
+
+      <ul class="contact-list">
+        <li>
+          <a href="mailto:krushankb@gmail.com" class="contact-row">
+            <span class="mono contact-label">Email</span>
+            <span class="contact-value">krushankb@gmail.com</span>
+            <span class="contact-arrow" aria-hidden="true">↗</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/Krushankb" class="contact-row" target="_blank" rel="noopener">
+            <span class="mono contact-label">GitHub</span>
+            <span class="contact-value">github.com/Krushankb</span>
+            <span class="contact-arrow" aria-hidden="true">↗</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/krushank-bayyapu-3ab0a51b3/" class="contact-row" target="_blank" rel="noopener">
+            <span class="mono contact-label">LinkedIn</span>
+            <span class="contact-value">linkedin.com/in/krushank-bayyapu</span>
+            <span class="contact-arrow" aria-hidden="true">↗</span>
+          </a>
+        </li>
+        <li>
+          <a href="./assets/resume.pdf" class="contact-row" target="_blank" rel="noopener">
+            <span class="mono contact-label">Résumé</span>
+            <span class="contact-value">Krushank_Bayyapu_Resume.pdf</span>
+            <span class="contact-arrow" aria-hidden="true">↗</span>
+          </a>
+        </li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p class="mono">© 2026 Krushank Bayyapu</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
 </html>
