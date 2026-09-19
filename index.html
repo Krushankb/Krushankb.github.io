@@ -21,8 +21,8 @@
       <a href="#top" class="wordmark">Krushank Bayyapu</a>
       <ul class="nav-links">
         <li><a href="#about">About</a></li>
-        <li><a href="#work">Work</a></li>
         <li><a href="#projects">Projects</a></li>
+        <li><a href="#work">Work</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
       <a class="nav-resume" href="./assets/resume.pdf" target="_blank" rel="noopener">Résumé <span aria-hidden="true">↗</span></a>
@@ -30,6 +30,8 @@
   </header>
 
   <main id="main">
+
+    <!-- HERO -->
     <section id="top" class="hero" aria-labelledby="hero-title">
       <p class="eyebrow mono">// portfolio · 2026</p>
 
@@ -68,16 +70,458 @@
         </aside>
       </div>
 
-      <div class="hero-foot">
+      <a href="#about" class="hero-foot" aria-label="Jump to About">
         <span class="mono">01 &nbsp;·&nbsp; About</span>
         <span class="hero-foot-rule" aria-hidden="true"></span>
         <span class="mono">Scroll <span aria-hidden="true">↓</span></span>
+      </a>
+    </section>
+
+
+    <!-- ABOUT -->
+    <section id="about" class="section" aria-labelledby="about-title">
+      <header class="section-head">
+        <p class="mono section-num">// 02 — About</p>
+        <h2 id="about-title" class="section-title">Engineer at the edge<br>of models and users.</h2>
+      </header>
+
+      <div class="about-grid">
+        <div class="about-body">
+          <p>
+            I'm Krushank — an ML engineer with 3+ years shipping generative AI systems at production scale. I hold an M.S. in Computer Science from the University of Illinois Urbana-Champaign (Highest Honors, 2025) and a B.S. in CS from UIUC (Dean's List, James Scholar Honors, 2024).
+          </p>
+          <p>
+            Today I'm on United Airlines' Early Career Digital Leadership rotation, where I designed and own a production-grade agentic AI platform used by 150+ internal users, and previously helped build the enterprise LLM platform SDK that 10+ teams ship on. Before that: TrustLogix.AI (LLM test automation), the FORWARD Data Lab (retrieval + reasoning research), and earlier internships across fraud, ML, and data engineering.
+          </p>
+          <p>
+            I want to work close to the customer edge — with teams that put frontier models into real workflows and iterate against outcomes, not benchmarks. Multi-agent orchestration, RAG at scale, evaluation infrastructure, and the practical craft of making these systems land inside a real organization.
+          </p>
+        </div>
+
+        <aside class="about-card" aria-label="Quick facts">
+          <ul class="facts">
+            <li><span class="mono">Based</span><span>Chicago, IL</span></li>
+            <li><span class="mono">Education</span><span>M.S. CS · UIUC · 2025</span></li>
+            <li><span class="mono">Experience</span><span>3+ yrs shipping AI</span></li>
+            <li><span class="mono">Focus</span><span>Agentic AI · RAG · LLM Infra</span></li>
+            <li><span class="mono">Open to</span><span>FDE · Hybrid or Remote</span></li>
+          </ul>
+        </aside>
       </div>
     </section>
+
+
+    <!-- SKILLS -->
+    <section id="skills" class="section" aria-labelledby="skills-title">
+      <header class="section-head">
+        <p class="mono section-num">// 03 — Stack</p>
+        <h2 id="skills-title" class="section-title">The tools I reach for.</h2>
+      </header>
+
+      <div class="stack">
+        <div class="stack-row">
+          <p class="mono stack-label">Languages</p>
+          <p class="stack-items">Python · Java · C · C++ · R · Bash · MATLAB · Git</p>
+        </div>
+        <div class="stack-row">
+          <p class="mono stack-label">AI &amp; ML</p>
+          <p class="stack-items">Agentic AI · Large Language Models · Generative AI · Retrieval-Augmented Generation · LangChain · LangGraph · Model Context Protocol · Natural Language Processing · Machine Learning</p>
+        </div>
+        <div class="stack-row">
+          <p class="mono stack-label">Cloud &amp; Data</p>
+          <p class="stack-items">AWS · Azure Data Factory · Snowflake · Databricks · Docker · MySQL · MongoDB</p>
+        </div>
+        <div class="stack-row">
+          <p class="mono stack-label">Tools</p>
+          <p class="stack-items">Playwright · Kubernetes · Splunk SOAR · PEGA · Webhook APIs · Neo4j · Streamlit · Ollama</p>
+        </div>
+        <div class="stack-row">
+          <p class="mono stack-label">Certifications</p>
+          <p class="stack-items">AWS AI Practitioner · AWS Cloud Practitioner · Anthropic MCP (Adv.) · Databricks GenAI · DeepLearning.AI GANs</p>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section" aria-labelledby="projects-title">
+      <header class="section-head">
+        <p class="mono section-num">// 04 — Featured Projects</p>
+        <h2 id="projects-title" class="section-title">Four systems, shipped.</h2>
+      </header>
+
+      <div class="project-grid">
+
+        <article class="project project-featured">
+          <div class="project-head">
+            <p class="mono project-meta">2026 · United Airlines · Production</p>
+            <h3 class="project-title">Agentic AI Platform</h3>
+            <p class="project-role mono">Owner · Agentic AI Systems Engineer</p>
+          </div>
+          <p class="project-pitch">
+            A production-grade agentic platform enabling autonomous workflows across United's internal operations — multi-agent orchestration with tool use and planning, layered on top of a RAG substrate and continuous eval pipelines.
+          </p>
+          <ul class="chips" aria-label="Stack">
+            <li>Multi-agent</li>
+            <li>Tool use</li>
+            <li>RAG</li>
+            <li>LLM eval</li>
+            <li>MCP</li>
+            <li>Production</li>
+          </ul>
+          <p class="project-outcome">
+            <strong>150+ users</strong> · <strong>73%</strong> less manual review · <strong>~300 hrs/month</strong> saved · <strong>2.5×</strong> task completion · <strong>+4 pts</strong> NPS.
+          </p>
+          <div class="project-links">
+            <a href="#case-study" class="link-arrow">Read the case study <span aria-hidden="true">→</span></a>
+          </div>
+        </article>
+
+        <article class="project">
+          <div class="project-head">
+            <p class="mono project-meta">2025 · Side project</p>
+            <h3 class="project-title">AI Code Dependency Visualizer</h3>
+            <p class="project-role mono">Solo build · Local-first</p>
+          </div>
+          <p class="project-pitch">
+            A local AI assistant that maps and reasons over a codebase's dependency graph. Python AST extracts structure, Llama 3 summarizes files, and Neo4j + Pyvis render an interactive graph you can chat with.
+          </p>
+          <ul class="chips" aria-label="Stack">
+            <li>Llama 3</li>
+            <li>LangChain</li>
+            <li>Neo4j</li>
+            <li>Python AST</li>
+            <li>Streamlit</li>
+            <li>Ollama</li>
+          </ul>
+          <p class="project-outcome">
+            Local-first design keeps proprietary code off external APIs — private RAG for engineers.
+          </p>
+          <div class="project-links">
+            <a href="https://github.com/Krushankb" class="link-arrow" target="_blank" rel="noopener">GitHub <span aria-hidden="true">↗</span></a>
+          </div>
+        </article>
+
+        <article class="project">
+          <div class="project-head">
+            <p class="mono project-meta">2025 · Side project</p>
+            <h3 class="project-title">LLM Instructional Training System</h3>
+            <p class="project-role mono">Solo build · Multi-agent</p>
+          </div>
+          <p class="project-pitch">
+            A production-style multi-agent training platform that simulates scenarios and gives adaptive, LLM-driven feedback. A persistent memory + retrieval layer keeps context continuous across sessions.
+          </p>
+          <ul class="chips" aria-label="Stack">
+            <li>Llama 3</li>
+            <li>Multi-agent</li>
+            <li>RAG</li>
+            <li>Persistent memory</li>
+            <li>Prompt engineering</li>
+          </ul>
+          <p class="project-outcome">
+            Grounded outputs in instructional materials — culturally aware, pedagogically aligned feedback.
+          </p>
+          <div class="project-links">
+            <a href="https://github.com/Krushankb" class="link-arrow" target="_blank" rel="noopener">GitHub <span aria-hidden="true">↗</span></a>
+          </div>
+        </article>
+
+        <article class="project">
+          <div class="project-head">
+            <p class="mono project-meta">2024 · Research + side project</p>
+            <h3 class="project-title">LLM Next-Generation Search</h3>
+            <p class="project-role mono">Research Developer · FORWARD Data Lab, UIUC</p>
+          </div>
+          <p class="project-pitch">
+            An LLM-based search system combining planning + retrieval over millions of documents. Prototype architectures informed downstream production RAG patterns at the lab.
+          </p>
+          <ul class="chips" aria-label="Stack">
+            <li>LLM planning</li>
+            <li>Retrieval</li>
+            <li>Structured data</li>
+            <li>Prototype → prod</li>
+          </ul>
+          <p class="project-outcome">
+            <strong>+57%</strong> answer relevance vs baseline retrieval.
+          </p>
+          <div class="project-links">
+            <a href="https://github.com/Krushankb/FORWARD-Data-Lab-LLM-Research-Project" class="link-arrow" target="_blank" rel="noopener">GitHub <span aria-hidden="true">↗</span></a>
+            <a href="https://drive.google.com/file/d/13-ju8MgIVA2rVBsGspb64wU_IES88eRq/view?usp=sharing" class="link-arrow" target="_blank" rel="noopener">Demo <span aria-hidden="true">↗</span></a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+
+    <!-- CASE STUDY -->
+    <section id="case-study" class="section section-case" aria-labelledby="case-title">
+      <header class="section-head">
+        <p class="mono section-num">// 05 — Case study</p>
+        <h2 id="case-title" class="section-title">Agentic AI Platform<br>at United Airlines.</h2>
+        <p class="section-lede">
+          What it took to move a multi-agent system from a lab demo to a production platform serving 150+ internal users across engineering and operations.
+        </p>
+      </header>
+
+      <div class="case-grid">
+        <div class="case-body">
+
+          <div class="case-block">
+            <h3 class="case-head">The problem</h3>
+            <p>
+              Internal ops and engineering teams at United were losing days a month to repetitive investigative work — chasing information across siloed systems, hand-triaging reviews, and repeating the same reasoning steps across similar cases. Existing point tools solved narrow pieces of the workflow; nothing composed them end-to-end. Everyone knew where the bottleneck was; nobody had built the plumbing to remove it.
+            </p>
+          </div>
+
+          <div class="case-block">
+            <h3 class="case-head">The approach</h3>
+            <p>
+              I designed and owned a production-grade agentic platform layered on top of United's enterprise LLM SDK. Three subsystems, one product:
+            </p>
+            <ol class="case-list">
+              <li>
+                <strong>Multi-agent orchestration</strong> — planner + tool-using agents with structured hand-offs, so a single request could safely fan out to multiple specialists, gather evidence, and produce a decision.
+              </li>
+              <li>
+                <strong>RAG substrate</strong> — 100K+ documents indexed with retrieval + prompt orchestration tuned to the ops corpus, so agents reasoned over ground truth instead of hallucinating from priors.
+              </li>
+              <li>
+                <strong>Eval &amp; feedback loop</strong> — automated ground-truth generation and scoring, plus a monitoring pipeline that lets us catch regressions and iterate on prompts + tools without breaking production.
+              </li>
+            </ol>
+          </div>
+
+          <div class="case-block">
+            <h3 class="case-head">Tradeoffs I chose</h3>
+            <ul class="case-list">
+              <li>
+                <strong>Latency vs. reasoning depth.</strong> Multi-agent workflows are slower than a single-shot call. I parallelized tool execution and cached retrievals; users trade a few seconds of wait for a 2.5× lift in what actually gets completed.
+              </li>
+              <li>
+                <strong>Response speed vs. RAG accuracy.</strong> Bigger retrievals help recall but hurt latency and cost. I tuned retrieval + prompt orchestration per workflow rather than one-size-fits-all — issue resolution got 47% faster without sacrificing grounding.
+              </li>
+              <li>
+                <strong>Governance overhead vs. iteration velocity.</strong> Automated ground truth + scoring meant continuous eval didn't slow the team down — it caught quality regressions before users did.
+              </li>
+            </ul>
+          </div>
+
+          <div class="case-block">
+            <h3 class="case-head">Result</h3>
+            <p>
+              Adopted across engineering and operations teams; used by 150+ users at last measurement. Manual review time dropped 73% (~300+ hours/month saved), task completion rates rose 2.5×, and internal NPS improved by 4+ points on the workflows the platform touched. Integration into internal platforms drove adoption without top-down mandates — the tool spread because it worked.
+            </p>
+          </div>
+
+          <div class="case-block">
+            <h3 class="case-head">What I'd generalize</h3>
+            <p>
+              The platform pattern held: <em>evaluation infrastructure is not a nice-to-have — it's the substrate that lets you keep shipping</em>. Multi-agent designs earn their complexity only when you can ground them and measure them; without both, they collapse into unreliable demos. That's the lesson I'd carry into any Forward Deployed context.
+            </p>
+          </div>
+        </div>
+
+        <aside class="case-metrics" aria-label="Impact">
+          <div class="metric">
+            <p class="metric-num">150+</p>
+            <p class="metric-label mono">internal users</p>
+          </div>
+          <div class="metric">
+            <p class="metric-num">73%</p>
+            <p class="metric-label mono">less manual review</p>
+          </div>
+          <div class="metric">
+            <p class="metric-num">~300 hrs</p>
+            <p class="metric-label mono">saved / month</p>
+          </div>
+          <div class="metric">
+            <p class="metric-num">2.5×</p>
+            <p class="metric-label mono">task completion</p>
+          </div>
+          <div class="metric">
+            <p class="metric-num">47%</p>
+            <p class="metric-label mono">faster resolution</p>
+          </div>
+          <div class="metric">
+            <p class="metric-num">+4 pts</p>
+            <p class="metric-label mono">internal NPS</p>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+
+    <!-- WORK / EXPERIENCE -->
+    <section id="work" class="section" aria-labelledby="work-title">
+      <header class="section-head">
+        <p class="mono section-num">// 06 — Work</p>
+        <h2 id="work-title" class="section-title">Where I've shipped.</h2>
+      </header>
+
+      <ol class="timeline">
+
+        <li class="tl-entry">
+          <p class="tl-date mono">Feb 2026 — Present</p>
+          <div class="tl-body">
+            <h3 class="tl-role">Agentic AI Systems Engineer <span class="tl-org">· United Airlines</span></h3>
+            <p class="tl-loc mono">Chicago, IL · Early Career Digital Leadership Rotation</p>
+            <ul class="tl-bullets">
+              <li>Designed and owned a production-grade agentic AI platform for autonomous ops workflows — 150+ users, 73% reduction in manual review (~300+ hrs/month).</li>
+              <li>Built a production RAG knowledge system over 100K+ documents; issue resolution 47% faster via retrieval + prompt orchestration tuning.</li>
+              <li>Shipped LLM eval, monitoring, and feedback pipelines (automated ground truth + scoring) — 25% quality improvement, continuous governance.</li>
+              <li>Architected a multi-agent orchestration framework with tool use + planning, powering cross-functional workflows and lifting task completion 2.5×.</li>
+              <li>Led integration into internal platforms; +4pt NPS and adoption across multiple engineering and ops teams.</li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="tl-entry">
+          <p class="tl-date mono">Aug 2025 — Feb 2026</p>
+          <div class="tl-body">
+            <h3 class="tl-role">Machine Learning · LLM Engineer <span class="tl-org">· United Airlines</span></h3>
+            <p class="tl-loc mono">Chicago, IL · Early Career Digital Leadership Rotation</p>
+            <ul class="tl-bullets">
+              <li>Designed and deployed core components of an enterprise LLM platform SDK — 10+ teams shipping production AI apps on it.</li>
+              <li>Built multi-model routing + inference pipelines (OpenAI, Bedrock, Whisper, Veo) — 32%+ inference cost reduction with better latency + reliability.</li>
+              <li>Implemented automated evaluation + ground-truth generation for large-scale LLM benchmarking and production monitoring.</li>
+              <li>Shipped production AI agents for code generation and workflow automation — 40% developer productivity lift.</li>
+              <li>Led Atlassian MCP integration into the AI platform; scaled to millions of LLM requests / month.</li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="tl-entry">
+          <p class="tl-date mono">May 2025 — Jul 2025</p>
+          <div class="tl-body">
+            <h3 class="tl-role">Software Engineer Intern <span class="tl-org">· TrustLogix.AI</span></h3>
+            <p class="tl-loc mono">Mountain View, CA</p>
+            <ul class="tl-bullets">
+              <li>Built an AI-driven test automation framework using LLM agents — 60% less manual QA effort, broader coverage across core workflows.</li>
+              <li>Designed CI/CD-integrated E2E testing pipelines; regression bugs down 35%.</li>
+              <li>Migrated legacy test systems to structured, scalable formats; faster QA onboarding, better cross-team collaboration.</li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="tl-entry">
+          <p class="tl-date mono">May 2024 — Aug 2024</p>
+          <div class="tl-body">
+            <h3 class="tl-role">Cyber Digital Risk Technology Intern <span class="tl-org">· United Airlines</span></h3>
+            <p class="tl-loc mono">Chicago, IL</p>
+            <ul class="tl-bullets">
+              <li>Designed and shipped AI-powered fraud case management workflows used in production for enterprise fraud detection.</li>
+              <li>Automated fraud resolution pipelines — 38% shorter case handling time.</li>
+              <li>Integrated Redshift + Splunk data pipelines for real-time monitoring; built interim SOAR-based automation for incident response.</li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="tl-entry">
+          <p class="tl-date mono">Aug 2023 — Dec 2023</p>
+          <div class="tl-body">
+            <h3 class="tl-role">GenAI Research Development Assistant <span class="tl-org">· FORWARD Data Lab, UIUC</span></h3>
+            <p class="tl-loc mono">Champaign, IL</p>
+            <ul class="tl-bullets">
+              <li>Designed a next-generation AI search system combining LLM planning + retrieval over millions of documents.</li>
+              <li>Built the retrieval + reasoning pipeline — +57% answer relevance vs baseline.</li>
+              <li>Prototyped architectures that informed production RAG patterns at the lab.</li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="tl-entry">
+          <p class="tl-date mono">May 2023 — Aug 2023</p>
+          <div class="tl-body">
+            <h3 class="tl-role">GenAI Digital Technology Intern <span class="tl-org">· United Airlines</span></h3>
+            <p class="tl-loc mono">Chicago, IL</p>
+            <ul class="tl-bullets">
+              <li>Built and deployed an LLM-powered retrieval system for enterprise knowledge access — +63% internal search efficiency.</li>
+              <li>Fine-tuned models for extended context handling; +33% response completeness and accuracy.</li>
+              <li>Shipped reproducible ingestion, retrieval, and inference pipelines integrated into broader AI initiatives.</li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="tl-entry">
+          <p class="tl-date mono">May 2022 — Aug 2022</p>
+          <div class="tl-body">
+            <h3 class="tl-role">Associate Data Engineer Intern <span class="tl-org">· Blue.cloud</span></h3>
+            <p class="tl-loc mono">Chicago, IL</p>
+            <ul class="tl-bullets">
+              <li>Built scalable data pipelines integrating APIs and cloud systems (Snowflake, Azure) for downstream ML workflows.</li>
+              <li>Enabled real-time data processing and analytics — faster insight generation across datasets.</li>
+            </ul>
+          </div>
+        </li>
+
+      </ol>
+
+      <div class="edu">
+        <p class="mono edu-label">Education</p>
+        <ul class="edu-list">
+          <li>
+            <span class="edu-degree">M.S. Computer Science</span>
+            <span class="mono edu-meta">UIUC · Dec 2025 · Highest Honors Graduate</span>
+          </li>
+          <li>
+            <span class="edu-degree">B.S. Computer Science</span>
+            <span class="mono edu-meta">UIUC · Dec 2024 · Dean's List · James Scholar Honors</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+
+    <!-- CONTACT -->
+    <section id="contact" class="section section-contact" aria-labelledby="contact-title">
+      <header class="section-head">
+        <p class="mono section-num">// 07 — Contact</p>
+        <h2 id="contact-title" class="section-title">Let's talk.</h2>
+        <p class="section-lede">
+          Fastest way to reach me is email. If you're hiring for a Forward Deployed role, or building the frontier of agentic AI in production — I'd love to hear about it.
+        </p>
+      </header>
+
+      <ul class="contact-list">
+        <li>
+          <a href="mailto:krushankb@gmail.com" class="contact-row">
+            <span class="mono contact-label">Email</span>
+            <span class="contact-value">krushankb@gmail.com</span>
+            <span class="contact-arrow" aria-hidden="true">↗</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/Krushankb" class="contact-row" target="_blank" rel="noopener">
+            <span class="mono contact-label">GitHub</span>
+            <span class="contact-value">github.com/Krushankb</span>
+            <span class="contact-arrow" aria-hidden="true">↗</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/krushank-bayyapu-3ab0a51b3/" class="contact-row" target="_blank" rel="noopener">
+            <span class="mono contact-label">LinkedIn</span>
+            <span class="contact-value">linkedin.com/in/krushank-bayyapu</span>
+            <span class="contact-arrow" aria-hidden="true">↗</span>
+          </a>
+        </li>
+        <li>
+          <a href="./assets/resume.pdf" class="contact-row" target="_blank" rel="noopener">
+            <span class="mono contact-label">Résumé</span>
+            <span class="contact-value">Krushank_Bayyapu_Resume.pdf</span>
+            <span class="contact-arrow" aria-hidden="true">↗</span>
+          </a>
+        </li>
+      </ul>
+    </section>
+
   </main>
 
   <footer class="site-footer">
-    <p class="mono">© 2026 Krushank Bayyapu · Built with restraint.</p>
+    <div class="footer-inner">
+      <p class="mono">© 2026 Krushank Bayyapu</p>
+      <p class="mono">Built by hand · Chicago</p>
+    </div>
   </footer>
 
   <script src="script.js"></script>
