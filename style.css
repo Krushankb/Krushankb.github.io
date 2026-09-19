@@ -295,6 +295,44 @@ p:last-child { margin-bottom: 0; }
 .hero-foot:hover .mono { color: var(--fg); }
 .hero-foot-rule { flex: 1; height: 1px; background: var(--rule); }
 
+/* ---------- Career strip ---------- */
+.career-strip {
+  border-top: 1px solid var(--rule);
+  border-bottom: 1px solid var(--rule);
+  background: var(--bg-elev);
+}
+.career-strip-inner {
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: clamp(1.75rem, 3vw, 2.5rem) var(--gutter);
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 2rem;
+}
+.career-stat {
+  display: grid;
+  gap: 0.4rem;
+  min-width: 0;
+}
+.career-num {
+  font-family: var(--serif);
+  font-weight: 400;
+  font-optical-sizing: auto;
+  font-size: clamp(1.4rem, 1vw + 1rem, 1.85rem);
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+  color: var(--fg);
+  margin: 0;
+}
+.career-label { margin: 0; }
+
+@media (max-width: 820px) {
+  .career-strip-inner {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.5rem;
+  }
+}
+
 /* ---------- Section frame ---------- */
 .section {
   max-width: var(--container);
@@ -302,6 +340,7 @@ p:last-child { margin-bottom: 0; }
   padding: clamp(4rem, 9vw, 7rem) var(--gutter);
   border-top: 1px solid var(--rule);
 }
+.career-strip + .section { border-top: 0; }
 .section-head {
   margin-bottom: clamp(2.5rem, 5vw, 4rem);
   max-width: 60ch;
@@ -341,6 +380,15 @@ p:last-child { margin-bottom: 0; }
   max-width: 62ch;
 }
 .about-body p + p { margin-top: 1.15rem; }
+.about-lead {
+  font-family: var(--serif);
+  font-weight: 400;
+  font-size: clamp(1.35rem, 0.9vw + 1rem, 1.65rem);
+  line-height: 1.35;
+  letter-spacing: -0.01em;
+  color: var(--fg);
+  margin: 0 0 1.75rem !important;
+}
 .about-card {
   background: var(--bg-elev);
   border: 1px solid var(--rule);
@@ -501,6 +549,22 @@ p:last-child { margin-bottom: 0; }
   color: var(--fg);
   max-width: 64ch;
 }
+.case-tldr {
+  border-left: 3px solid var(--accent);
+  padding: 0.5rem 0 0.5rem 1.15rem;
+  margin: 0 0 clamp(2rem, 4vw, 2.75rem);
+}
+.case-tldr-label { margin: 0 0 0.4rem; color: var(--accent); }
+.case-tldr-body {
+  font-family: var(--serif);
+  font-size: clamp(1.15rem, 0.7vw + 0.9rem, 1.35rem);
+  line-height: 1.4;
+  letter-spacing: -0.005em;
+  color: var(--fg);
+  margin: 0;
+  font-weight: 400;
+}
+.case-tldr-body strong { color: var(--fg); font-weight: 500; }
 .case-block + .case-block { margin-top: clamp(1.75rem, 3vw, 2.5rem); }
 .case-head {
   font-family: var(--mono);
