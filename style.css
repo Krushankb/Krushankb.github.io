@@ -19,20 +19,6 @@
   color-scheme: dark;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    --bg: #F4F1EA;
-    --bg-elev: #ECE7DA;
-    --fg: #17171A;
-    --muted: #6F6F68;
-    --rule: #D9D5CA;
-    --accent: #8B5A1F;
-    --accent-soft: rgba(139, 90, 31, 0.14);
-    --accent-ink: #F4F1EA;
-    color-scheme: light;
-  }
-}
-
 *, *::before, *::after { box-sizing: border-box; }
 html, body { margin: 0; padding: 0; }
 html { scroll-behavior: smooth; }
