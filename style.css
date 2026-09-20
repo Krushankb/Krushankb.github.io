@@ -8,7 +8,7 @@
   --accent-soft: rgba(212, 168, 83, 0.18);
   --accent-ink: #17171A;
 
-  --serif: 'Fraunces', ui-serif, Georgia, 'Times New Roman', serif;
+  --serif: 'Playfair Display', ui-serif, Georgia, 'Times New Roman', serif;
   --sans: 'Inter Tight', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
   --mono: 'JetBrains Mono', ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
 
@@ -17,20 +17,6 @@
   --radius: 6px;
 
   color-scheme: dark;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    --bg: #F4F1EA;
-    --bg-elev: #ECE7DA;
-    --fg: #17171A;
-    --muted: #6F6F68;
-    --rule: #D9D5CA;
-    --accent: #8B5A1F;
-    --accent-soft: rgba(139, 90, 31, 0.14);
-    --accent-ink: #F4F1EA;
-    color-scheme: light;
-  }
 }
 
 *, *::before, *::after { box-sizing: border-box; }
@@ -182,18 +168,16 @@ p:last-child { margin-bottom: 0; }
 .display {
   font-family: var(--serif);
   font-weight: 400;
-  font-optical-sizing: auto;
-  font-variation-settings: "opsz" 120;
   font-size: clamp(2.5rem, 6.5vw, 5.25rem);
   line-height: 1.02;
-  letter-spacing: -0.025em;
+  letter-spacing: -0.02em;
   margin: 0 0 clamp(1.25rem, 2.5vw, 1.75rem);
   color: var(--fg);
 }
 .display-em {
   display: block;
   font-style: italic;
-  font-weight: 300;
+  font-weight: 400;
 }
 .lede {
   font-family: var(--sans);
@@ -316,11 +300,10 @@ p:last-child { margin-bottom: 0; }
 }
 .career-num {
   font-family: var(--serif);
-  font-weight: 400;
-  font-optical-sizing: auto;
+  font-weight: 500;
   font-size: clamp(1.4rem, 1vw + 1rem, 1.85rem);
-  line-height: 1.05;
-  letter-spacing: -0.02em;
+  line-height: 1.1;
+  letter-spacing: -0.01em;
   color: var(--fg);
   margin: 0;
 }
@@ -349,11 +332,9 @@ p:last-child { margin-bottom: 0; }
 .section-title {
   font-family: var(--serif);
   font-weight: 400;
-  font-optical-sizing: auto;
-  font-variation-settings: "opsz" 96;
   font-size: clamp(2rem, 4.5vw, 3.25rem);
-  line-height: 1.05;
-  letter-spacing: -0.02em;
+  line-height: 1.1;
+  letter-spacing: -0.015em;
   margin: 0;
   color: var(--fg);
 }
